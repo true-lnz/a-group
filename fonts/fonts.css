@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/BebasNeue-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Neutral Face";
+	src: url("../public/NeutralFace-Bold.otf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("../fonts/HelveticaNeue-Roman.otf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: local('HelveticaNeueCyr-Medium'),
+		url('HelveticaNeueCyr-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: local('HelveticaNeueCyr-Black'),
+		url('HelveticaNeueCyr-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: local('HelveticaNeueCyr-Roman'),
+		url('HelveticaNeueCyr-Roman.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: local('HelveticaNeueCyr-Bold'),
+		url('HelveticaNeueCyr-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+

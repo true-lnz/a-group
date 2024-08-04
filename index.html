@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+		<link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="js/nice-select/nice-select.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="./fonts/fonts.css" />
+		<link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+
+  </head>
+  <body>
+    <div class="root">
+			<div class="header">
+        <div class="header-child">
+					<a href="/" class="header-item">A-group</a>
+          <a href="#about" class="header-item">О нас</a>
+          <a href="#products" class="header-item">Наши услуги</a>
+          <a href="#cases" class="header-item">Кейсы</a>
+          <a href="#" class="header-item">Заказать мерч</a>
+          <a href="#footer" class="header-item">Контакты</a>
+          <a href="tel:+79876002813" class="header-item last">+7 (987) 600-28-13</a>
+				</div>
+      </div>
+
+			<main>
+				<section class="hero">
+					<div class="swiper hero-slider">
+						<!-- ToDo: Доделать переход -->
+						<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="hero-image" src="images/hero1.png"></div>
+								<div class="swiper-slide"><img class="hero-image" src="images/hero2.png"></div>
+								<div class="swiper-slide"><img class="hero-image" src="images/hero3.png"></div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</section>
+
+				<div class="marquee upper-text">
+					<ul class="marquee__content">
+						<li>A-Group</li>
+						<li>Наша миссия - создавать стиль который объединяет</li>
+					</ul>
+					<ul aria-hidden="true" class="marquee__content">
+						<li>A-Group</li>
+						<li>Наша миссия - создавать стиль который объединяет</li>
+					</ul>
+				</div>
+
+				<section class="banner">
+					<div class="banner-container">
+						<img src="./images/banner.png" class="banner-image"></>
+					</div>
+				</section>
+
+				<section id="products">
+					<h1 class="section-header center">Наши услуги</h1>
+					<ul class="products-container">
+						<li class="products-item">
+							<a href="">
+								<p class="product-name upper-text">
+									Корпоративный мерч
+								</p>
+								<img class="product-image" src=""></img>
+							</a>
+						</li>
+						<li class="products-item">
+							<a href="">
+							<p class="product-name upper-text">
+								Сувенирная продукция
+							</p>
+							<img class="product-image" src=""></img>
+						</a></li>
+						<li class="products-item">
+							<a href="">
+								<p class="product-name upper-text">
+									Бланковая одежда
+								</p>
+								<img class="product-image" src=""></img>
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section id="about">
+					<div class="cards-row">
+						<div class="cards-item" style="width: 117rem;">
+							<h1 class="section-header">О нас</h1>
+							<div class="founder-info">
+								<img class="founder-image" src="images/fattahov.png" alt="">
+								<p class="upper-text"><b>Алмаз Фаттахов</b><br>Основатель A-Group</p>
+							</div>
+						</div>
+						<div class="cards-item">
+							<p class="main-text upper-text">
+								<b>Компания работает на рынке более 3 лет,
+									имеет 3 направления:</b><br>
+									&nbsp;1. Бренд одежды,<br>
+									&nbsp;2. Производство корпоративной одежды,<br>
+									&nbsp;3. Изготовление сувенирной продукции.
+							</p>
+						</div>
+					</div>
+
+					<div class="cards-container">
+						<div class="cards-column" style="width: 58.5rem;">
+							<div class="cards-item text">
+								<b class="upper-text">Наш бренд одежды</b>
+								<p class="a-paragraph">
+									STREET CRIPS - 6 магазинов по России.<br>
+									Под брендом успешно продается порядка<br>
+									70 уникальных артикулов одежды.<br>
+								</p>
+								<p class="a-paragraph">Бренд славится своим безупречным качеством<br>и уникальными дизайнами.</p>
+								<a class="order-btn" href="">Сделать мерч</a>
+							</div>
+							<div class="cards-item">
+								<img class="cards-image" src="images/corporate_cloth.png" alt="">
+							</div>
+							<div class="cards-item text">
+								<b class="upper-text">Сувенирная продукция</b>
+								<p class="a-paragraph">
+									Компания производит, брендирует
+									и поставляет широкий спектр сувенирной продукции, а также делает нетипичные
+									и запоминающиеся корпоративные подарки, отражающие ценности вашего бизнеса
+									и укрепляющие партнерство.
+								</p>
+								<a class="order-btn" href="">Сделать мерч</a>
+							</div>
+						</div>
+						
+						<div class="cards-column" style="width: 55.9375rem;">
+							<div class="cards-item">
+								<img class="cards-image" src="images/street_creeps.png" alt="">
+							</div>
+							<div class="cards-item text">
+								<b class="upper-text">Корпоративная одежда</b>
+								<p class="a-paragraph">
+									Производство корпоративной одежды<br>
+									- компания выполнила более 100 заказов для компаний в абсолютно разных отраслях: ресторанный бизнес, нефтяной, работы
+									со спортивными клубами, университетами, администрациями городов.
+								</p>
+								<a class="order-btn" href="">Сделать мерч</a>
+							</div>
+							<div class="cards-item">
+								<img class="cards-image" style="object-position: 0 -100px;" src="images/souvenir_products.png" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-row last">
+						<div class="cards-item">
+							<p class="upper-text center"><b>Мы следим за качеством,<br>
+								поэтому ты можешь быть уверен, что мерч изготовлен<br>
+								из качественных тканей, хорошо забрендирован и бережно упакован</b></p>
+						</div>
+					</div>
+				</section>
+
+				<section id="cases">
+					<h1 class="section-header center">Наши кейсы</h1>
+					<div class="cards-container">
+						<div class="cards-column">
+							<div class="cards-item">
+								<img class="cards-image" src="images/cs_photo_1.png" alt="">
+							</div>
+							<div class="cards-item case-style-2">
+								<img class="cards-image" src="images/cs_photo_4.png" alt="">
+							</div>
+							<div class="cards-item">
+								<img class="cards-image" src="images/cs_photo_6.png" alt="">
+							</div>
+						</div>
+						<div class="cards-column">
+							<div class="cards-item case-style-1">
+								<img class="cards-image" src="images/cs_photo_2.png" alt="">
+							</div>
+							<div class="cards-item info">
+								<div class="cases-info"></div>
+								Результат
+								Мы помогаем клиенту осуществить  наилучший выбор, который есть на рынке.
+								A-Group 2024
+							</div>
+							<div class="cards-item case-style-1">
+								<img class="cards-image" src="images/cs_photo_7.png" alt="">
+							</div>
+						</div>		
+						<div class="cards-column">
+							<div class="cards-item">
+								<img class="cards-image" src="images/cs_photo_3.png" alt="">
+							</div>
+							<div class="cards-item case-style-3">
+								<img class="cards-image" src="images/cs_photo_5.png" alt="">
+							</div>
+
+							<div class="cards-item case-style-4">
+								<img class="cards-image" src="images/cs_photo_8.png" alt="">
+							</div>
+					</div>
+				</div>
+			</section>
+
+				<section id="feedback">
+					<form method="post" action="" class="feedback-form" action="">
+						<div>
+							<h1 class="section-header" style="white-space: nowrap">Заказать мерч</h1>
+							<span class="feedback-bg">Создаем<br>стиль,<br>который<br>объединяет</span>
+						</div>
+						<div class="feedback-data-input">
+							<p class="info">
+								Обсудим ваш проект.<br>
+								Подберем оптимальное решение.<br>
+								Предложим наиболее выгодные условия
+								сотрудничества у нас.
+							</p>
+							<input id="name" type="text" placeholder="Имя">
+							<div style="display: flex; gap: 2rem; width: 100%; margin: 1rem 0 .5rem">
+								<input id="phone" type="text" placeholder="Телефон">
+								<input id="comment" type="text" placeholder="Комментарий">
+							</div>
+							<p class="personal-agreement">Нажимая на кнопку, Вы даете согласие на обработку <a href="">персональных данных</a></p>
+						</div>
+		
+						<button id="feedback-btn" type="submit" href="">Оставить заявку</button>
+					</form>
+				</section>
+
+				<section id="clients">
+					<div class="cards-container">
+						<div class="cards-row">
+							<div class="cards-item"><img src="./images/icons/art_kvadrat.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/mechti.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/hud_federation.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/ufaoil.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/pan_asian_kitchen.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/mama_varit_kofe.svg" class="cards-image"></img></div>
+						</div>
+						<div class="cards-row">
+							<div class="cards-item"><img src="./images/icons/shkola_economiki.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/alfalot.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/zorge_fitness.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/mendeleef_fitness.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/sber.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/lovkov.svg" class="cards-image"></img></div>
+						</div>
+						<div class="cards-row">
+							<div class="cards-item"><img src="./images/icons/odjahuri.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/papa power.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/ldgr.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/eitek.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/fabrika.svg" class="cards-image"></img></div>
+							<div class="cards-item"><img src="./images/icons/a-market.svg" class="cards-image"></img></div>
+						</div>
+					</div>
+				</section>
+				
+			</main>
+
+      <footer id="footer">
+				<div class="footer-row">
+					<div class="footer-item">
+						<h1 class="a-group"><a href="/">A-GROUP</a></h1>
+					</div>
+					<div class="footer-item">
+						<ul class="a-group-info">
+							<li>ИП ФАТТАХОВ А.Р.</li>
+							<li>ИНН 027817725169</li>
+							<li>ОГРН 323028000075040</li>
+							<li><a href="">Политика конфиденциональности</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-row" style="align-items: flex-end">
+					<div class="footer-item">
+						<p class="f-paragraph">ОСТАЛИСЬ ВОПРОСЫ? СВЯЖИТЕСЬ С НАМИ</p>
+						<a class="f-phone" href="tel:+79876002813">+7 (987) 600-28-13</a>
+					</div>
+					<div class="footer-item">
+						<a class="f-mail upper-text" href="mailto:a-group.russia@mail.ru">a-group.russia@mail.ru</a>
+					</div>
+				</div>
+      </footer>
+
+    </div>
+
+    <script>
+      var container1 = document.getElementById("container1");
+      if (container1) {
+        container1.addEventListener("click", function (e) {
+          window.location.href = "./component.html";
+        });
+      }
+    </script>
+
+			<script src="js/jquery/jquery-3.7.1.min.js"></script>
+			<script src="js/swiper/swiper-bundle.min.js"></script>
+			<script src="js/nice-select/jquery.nice-select.min.js"></script>
+			<script src="js/fancybox/jquery.fancybox.min.js"></script>
+			<script src="js/functions.js"></script>
+			<script src="js/forms.js"></script>
+			<script src="js/index.js"></script>
+  </body>
+</html>

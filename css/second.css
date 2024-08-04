@@ -1,0 +1,24 @@
+.corporate-cloth .hero {
+	padding: 2.5vw 2vw !important;
+}
+
+.corporate-cloth .hero .hero-desc {
+	margin: 2vw 0;
+	letter-spacing: -0.0313rem;
+	line-height: 125%;
+}
+
+.btn-style-1 {
+	background: #000;
+	width: 24.375rem;
+	height: 5.25rem;
+	font-size: 3rem;
+}
+
+.corporate-cloth .hero {
+	min-height: 35vw;
+}
+
+.corporate-cloth .order-btn {
+	bottom: 0;
+}

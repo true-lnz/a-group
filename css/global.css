@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+	font-size: 18px;
+	background: var(--color-whitesmoke);
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p, b {
+	line-height: 170%;
+}
+
+small {
+	font-family: var(--font-helvetica);
+	letter-spacing: -2px;
+	font-size: 2.375rem;
+	font-weight: 900;
+}
+
+:root {
+  /* fonts */
+  --font-helvetica: "Helvetica Neue";
+  --font-helveticaneuecyr: "HelveticaNeueCyr";
+  --font-neutral-face: "Neutral Face";
+  --font-bebas-neue: "Bebas Neue";
+  --font-vasek: "Vasek";
+
+  /* font sizes */
+  --fz-xl: 1.5rem;
+  --fz-xxl: 2rem;
+	--fz-3xl: 2.25rem;
+  --fz-4xl: 2.5rem;
+  --fz-5xl: 6rem;
+
+  /* Colors */
+  --color-whitesmoke: #f4f4f4;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-sandybrown: rgba(247, 176, 124, 0.5);
+  --color-salmon: #e97660;
+  --color-firebrick: #af160d;
+  --color-gray-100: #14192b;
+  --color-gray-200: rgba(0, 0, 0, 0.1);
+  --color-gray-300: rgba(0, 0, 0, 0.2);
+  --color-midnightblue: #332878;
+  --color-darkgray-100: #979797;
+  --color-darkgray-200: rgba(166, 166, 166, 0.1);
+  --color-lightseagreen: #2bb1b5;
+  --color-gainsboro-100: #d9d9d9;
+
+  /* Gaps */
+  --gap-6xl: 25px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-mini: 15px;
+  --padding-11xl: 30px;
+  --padding-xs: 12px;
+  --padding-mid: 17px;
+
+  /* Border radiuses */
+  --br-mini: 15px;
+  --br-xl: 20px;
+  --br-2xl: 50px;
+  --br-3xl: 100px;
+  --br-5xl: 200px;
+}
