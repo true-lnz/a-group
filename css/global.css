@@ -23,7 +23,7 @@ small {
 
 :root {
   /* fonts */
-  --font-helvetica: "Helvetica Neue";
+  --font-helvetica: "Helvetica";
   --font-helveticaneuecyr: "HelveticaNeueCyr";
   --font-neutral-face: "Neutral Face";
   --font-bebas-neue: "Bebas Neue";
@@ -38,6 +38,7 @@ small {
 
   /* Colors */
   --color-whitesmoke: #f4f4f4;
+	--color-lightgray: #eeeeee;
   --color-white: #fff;
   --color-black: #000;
   --color-sandybrown: rgba(247, 176, 124, 0.5);
