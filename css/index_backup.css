@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-	scroll-padding-block: 6rem;
+	scroll-padding-block: 6vw;
 }
 
 .root {
@@ -46,7 +46,7 @@ html {
 }
 
 footer {
-	height: 32.5rem;
+	height: 520px;
 	bottom: 0;
 }
 
@@ -63,7 +63,7 @@ footer {
 .header-child .header-item {
 	color: #fff;
 	white-space: nowrap;
-	margin: 0 1.125rem;
+	margin: 0 1.125vw;
 	transition: color .2s;
 }
 
@@ -173,8 +173,8 @@ footer {
 	position: relative;
 	overflow: hidden;
 	display: flex;
-	margin: 0 2rem;
-	padding: 2.25rem 1.75rem;
+	margin: 0 2vw;
+	padding: 1.75vw 1.3vw;
 	flex-direction: column;
 	background: #fff;
 	height: 18rem;
@@ -191,7 +191,7 @@ footer {
 	width: 80%;
 	color: #000;
 	font-weight: bold;
-	font-size: var(--fz-4xl);
+	font-size: 40px;
 	line-height: 130%;
 	letter-spacing: 0.125rem;
 }
@@ -211,7 +211,7 @@ footer {
 #about {
 	background-color: #fff;
 	border-radius: 6.25rem;
-	padding: 3.5rem 2.125rem;
+	padding: 2.75vw 1.8vw;
 }
 
 #about .cards-container .cards-item {
@@ -267,20 +267,15 @@ footer {
 }
 
 .cards-item .main-text {
-	margin-top: 1px;
-	font-size: var(--fz-4xl);
-	letter-spacing: -1.5px;
-	line-height: 1.75;
-}
-
-.main-text b {
-	font-weight: 500;
+	font-size: 2.5rem;
+	letter-spacing: -2.5px;
+	line-height: 1.85;
 }
 
 .cards-item.text {
 	padding: 2.15rem 1.75rem;
 	font-size: 2.25rem;
-	letter-spacing: .0625rem;
+	letter-spacing: 1px;
 	background: var(--color-whitesmoke);
 }
 

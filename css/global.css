@@ -34,7 +34,8 @@ small {
   --fz-xxl: 2rem;
 	--fz-3xl: 2.25rem;
   --fz-4xl: 2.5rem;
-  --fz-5xl: 6rem;
+  --fz-5xl: 4rem;
+	--fz-6xl: 6rem;
 
   /* Colors */
   --color-whitesmoke: #f4f4f4;
