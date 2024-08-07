@@ -10,9 +10,9 @@ a {
 	color: inherit;
 }
 
-p, b {
+/* p, b {
 	line-height: 170%;
-}
+} */
 
 small {
 	font-family: var(--font-helvetica);
