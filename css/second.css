@@ -57,6 +57,12 @@
   background-repeat: no-repeat;
 }
 
+.corporate-cloth.c {
+	background-image: url(../images/banner-bg-3.png);
+	background-size: 100% 66%;
+	background-position: right top;
+}
+
 .corporate-cloth .hero, .blank-cloth .hero {
 	min-height: 35vw;
 }
