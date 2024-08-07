@@ -21,7 +21,7 @@
           <a href="#about" class="header-item">О нас</a>
           <a href="#products" class="header-item">Наши услуги</a>
           <a href="#cases" class="header-item">Кейсы</a>
-          <a href="#" class="header-item">Заказать мерч</a>
+          <a type="button" data-modal-target="#callback-form" class="header-item">Заказать мерч</a>
           <a href="#footer" class="header-item">Контакты</a>
           <a href="tel:+79876002813" class="header-item last">+7 (987) 600-28-13</a>
 				</div>
@@ -121,7 +121,7 @@
 									70 уникальных артикулов одежды.<br>
 								</p>
 								<p class="a-paragraph">Бренд славится своим безупречным качеством<br>и уникальными дизайнами.</p>
-								<a class="order-btn" href="">Сделать мерч</a>
+								<a class="order-btn" type="button" data-modal-target="#callback-form">Сделать мерч</a>
 							</div>
 							<div class="cards-item">
 								<img class="cards-image" src="images/corporate_cloth.png" alt="">
@@ -134,7 +134,7 @@
 									и запоминающиеся корпоративные подарки, отражающие ценности вашего бизнеса
 									и укрепляющие партнерство.
 								</p>
-								<a class="order-btn" href="">Сделать мерч</a>
+								<a class="order-btn" type="button" data-modal-target="#callback-form">Сделать мерч</a>
 							</div>
 						</div>
 						
@@ -239,7 +239,7 @@
 							<p class="personal-agreement">Нажимая на кнопку, Вы даете согласие на обработку <a href="policy.html">персональных данных</a></p>
 						</div>
 		
-						<button id="feedback-btn" type="submit" href="">Оставить заявку</button>
+						<button id="feedback-btn" type="button" data-modal-target="#callback-form" href="">Оставить заявку</button>
 					</form>
 				</section>
 
@@ -304,17 +304,19 @@
         <div class="modals-overlay js-modal-close">
           <div class="modal" id="#callback-form">
   					<div class="modal-header"><button class="modal-close js-modal-close" type="button"></button></div>
-  					<div class="modal-content">
+						<img src="images/modal-bg.png" class="modal-image"></img>
+						<div class="modal-content">
     					<h3 class="modal-title">Создадим мерч мечты!</h3>
 							<p class="desc">Оставьте свои контактные данные,<br>
 								и мы свяжемся с вами для уточнения деталей
 							</p>
-							<input class="name" type="text" placeholder="Имя">
-							<input class="phone" type="text" placeholder="Телефон">
-							<input class="email" type="text" placeholder="Почта">
-							<input class="details" type="text" placeholder="Детали заказа">
+							<input class="name" type="text" placeholder="ИМЯ">
+							<input class="phone" type="text" placeholder="ТЕЛЕФОН">
+							<input class="email" type="text" placeholder="ПОЧТА">
+							<input class="details" type="text" placeholder="ДЕТАЛИ ЗАКАЗА">
 							<a class="send-btn" type="button">Отправить</a>
-							<p class="desc">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="policy.html">политикой конфиденциальности</a>
+							<p class="desc">
+								<a href="policy.html">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</a>
 							</p>
   					</div>
 					</div>

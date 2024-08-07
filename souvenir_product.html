@@ -42,7 +42,7 @@
 								Лояльность клиента, получившего приятный подарок, возрастает,<br>
 								а использование продукции с логотипом делает бренд узнаваемым.					
 							</p>
-							<a class="order-btn btn-style-1" href="">Заказать мерч!</a>
+							<a class="order-btn btn-style-1" type="button" data-modal-target="#callback-form">Заказать мерч!</a>
 						</div>
 					</div>
 					<ul class="products-container">
@@ -86,7 +86,7 @@
 									аксессуары.  Наша команда проведет анализ и подберет наиболее подходящие варианты.
 								</b>
 							</p>
-						<a class="order-btn" href="">Заказать мерч!</a>
+						<a class="order-btn" type="button" data-modal-target="#callback-form">Заказать мерч!</a>
 					</div>
 				</section>
 
@@ -172,7 +172,7 @@
 
 			<section class="steps">
 				<h1 class="section-header">Этапы формирования заказа</h1>
-				<a class="order-btn" href="">Сделать мерч</a>
+				<a class="order-btn" type="button" data-modal-target="#callback-form">Сделать мерч</a>
 				<img class="steps-bg" src="images/order_steps_2.png" alt="">
 			</section>
 
@@ -256,6 +256,30 @@
 				</div>
 			</div>
 		</footer>
+		
+		<div class="modals">
+			<div class="modals-overlay js-modal-close">
+				<div class="modal" id="#callback-form">
+					<div class="modal-header"><button class="modal-close js-modal-close" type="button"></button></div>
+					<img src="images/modal-bg.png" class="modal-image"></img>
+					<div class="modal-content">
+						<h3 class="modal-title">Создадим мерч мечты!</h3>
+						<p class="desc">Оставьте свои контактные данные,<br>
+							и мы свяжемся с вами для уточнения деталей
+						</p>
+						<input class="name" type="text" placeholder="ИМЯ">
+						<input class="phone" type="text" placeholder="ТЕЛЕФОН">
+						<input class="email" type="text" placeholder="ПОЧТА">
+						<input class="details" type="text" placeholder="ДЕТАЛИ ЗАКАЗА">
+						<a class="send-btn" type="button">Отправить</a>
+						<p class="desc">
+							<a href="policy.html">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 	</div>
 
