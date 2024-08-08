@@ -99,12 +99,12 @@ footer {
 .ticker {
   display: inline-block;
   margin-top: 8px;
-  animation: marquee 20s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 .item-collection-1 {
   position: relative;
   left: 0%;
-  animation: swap 20s linear infinite;
+  animation: swap 15s linear infinite;
 }
 
 .item {
@@ -777,6 +777,8 @@ footer {
 	height: 2.875rem;
 	bottom: 1.125vw;
 	right: 1.5vw;
+
+	cursor: pointer;
 
 	background: no-repeat url("../images/icons/arrow.svg");
 	background-size:cover;
