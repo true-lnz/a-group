@@ -10,7 +10,7 @@ $(window).on('load', function () {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    }
+    },
 	});
 
 	const redirect = document.querySelector(".swiper-wrapper");
@@ -18,23 +18,18 @@ $(window).on('load', function () {
 		window.location.href = "http://stackoverflow.com";
 })
 
-	// Слайдер компаний
-	const companiesSlider = new Swiper('.companies__slider', {
-		// autoplay: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
-		speed: 600,
-		loop: true,
-		spaceBetween: 2,
+	// Слайдер изделий
+	const productsSlider = new Swiper('.products-slider', {
+		freeMode: {
+			enabled: true,
+			sticky: true,
+		},
+		mousewheel: {
+			invert: false,
+		},
+		spaceBetween: 80,
 		slidesPerView: 2,
 		slidesPerGroup: 1,
-
-		navigation: {
-			nextEl: '.companies__slider .swiper-button--next',
-			prevEl: '.companies__slider .swiper-button--prev',
-		},
 
 		breakpoints: {
 			320: {
