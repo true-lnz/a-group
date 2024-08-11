@@ -56,6 +56,7 @@ footer {
 	padding: .8rem;
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -355,24 +356,26 @@ footer {
 	object-fit: cover;
 }
 
+#cases {
+	position: relative;
+}
+
 #cases .cards-container {
 	margin-top: 1.4rem;
 	padding: 1.8025rem;
+	width: 100%;
+	gap: 6.75vw;
 }
 
 #cases .cards-item {
-	width: 33.375rem;
-	height: 41.9375rem;
+	width: 27.8vw;
+	height: 34.8vw;
 }
 
 #cases .cards-column {
 	display: flex;
 	flex-direction: column;
 	gap: 5.325rem;
-}
-
-#cases .cards-container {
-	gap: 8rem;
 }
 
 .founder-info {
@@ -579,6 +582,10 @@ footer {
 #feedback .section-header, 
 #feedback .feedback-data-input .info {
 	color: #fff;
+}
+
+#feedback .section-header {
+	font-size: 5vw;
 }
 
 #feedback .feedback-data-input > * {
@@ -812,9 +819,22 @@ footer {
 }
 
 @media (max-width: 1280px) {
-	
+	#about .cards-container {
+		flex-wrap: wrap;
+	}
+	html {
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 576px) {
+	html {
+		font-size: 10px;
+	}
+}
 
+@media (max-width: 320px) {
+	html {
+		font-size: 8px;
+	}
 }

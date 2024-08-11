@@ -1,6 +1,6 @@
 body {
   margin: 0;
-	font-size: 18px;
+	/* font-size: 18px; */
 	background: var(--color-whitesmoke);
 	scroll-behavior: smooth;
 }
