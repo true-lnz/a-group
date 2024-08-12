@@ -1,3 +1,38 @@
+$(document).ready(function() {
+	$("#orderForm").on("submit", function(event) {
+			event.preventDefault(); // Предотвращаем стандартную отправку формы
+
+			// Сбор данных из формы
+			var formData = {
+					name: $("input[name='name']").val(),
+					phone: $("input[name='phone']").val(),
+					email: $("input[name='email']").val(),
+					details: $("input[name='details']").val()
+			};
+
+			// AJAX-запрос
+			$.ajax({
+					type: "POST",
+					url: "feedback.php",
+					data: formData,
+					success: function(response) {
+							// Скрываем форму и показываем сообщение об успешной отправке
+							$("#orderForm").hide();
+							$(".modal-postmessage .success").show();
+							$(".modal-postmessage").show();
+					},
+					error: function() {
+							// Скрываем форму и показываем сообщение об ошибке
+							$("#orderForm").hide();
+							$(".modal-postmessage .error").show();
+							$(".modal-postmessage").show();
+					}
+			});
+	});
+});
+
+
+
 const workemailList = document.querySelectorAll('.workemail');
 const formAllInputs = document.querySelectorAll('.form__group-input, .form__group-textarea');
 

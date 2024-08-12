@@ -306,24 +306,29 @@
 
   		<div class="modals">
         <div class="modals-overlay js-modal-close">
-          <div class="modal" id="#callback-form">
+          <div class="modal" id="callback-form">
   					<div class="modal-header"><button class="modal-close js-modal-close" type="button"></button></div>
 						<img src="images/modal-bg.png" class="modal-image"></img>
-						<div class="modal-content">
+						<form class="modal-content" id="orderForm" method="post">
     					<h3 class="modal-title">Создадим мерч мечты!</h3>
 							<p class="desc">Оставьте свои контактные данные,<br>
 								и мы свяжемся с вами для уточнения деталей
 							</p>
-							<input class="name" type="text" placeholder="ИМЯ">
-							<input class="phone" type="text" placeholder="ТЕЛЕФОН">
-							<input class="email" type="text" placeholder="ПОЧТА">
-							<input class="details" type="text" placeholder="ДЕТАЛИ ЗАКАЗА">
-							<a class="send-btn" type="button">Отправить</a>
+							<input class="name" name="name" type="text" placeholder="ИМЯ">
+							<input class="phone" name="phone" type="text" placeholder="ТЕЛЕФОН">
+							<input class="email" name="email" type="text" placeholder="ПОЧТА">
+							<input class="details" name="details" type="text" placeholder="ДЕТАЛИ ЗАКАЗА">
+							<input class="send-btn" type="submit" value="Отправить">
 							<p class="desc">
 								<a href="policy.html" target="_blank">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</a>
 							</p>
-  					</div>
+  					</form>
+						<div class="modal-postmessage">
+							<h3 class="success"><b>Ваша заявка на рассмотрении!</b><br<br>>В ближайшее время наш менеджер свяжется с вами для уточнения деталей и подтверждения информации.</h3>
+							<h3 class="error"><b>Произошла ошибка!</b><br><br>Возможно у вас нестабильный интернет или включен VPN.</h3>
+						</div>
 					</div>
+
         </div>
   		</div>
 

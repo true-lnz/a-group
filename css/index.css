@@ -683,7 +683,7 @@ footer {
   /* display: none; */
   width: 100%;
   max-width: 450px;
-	height: 760px;
+	/* height: 760px; */
   font-size: 14px;
   line-height: 18px;
 	border-radius: var(--br-xl);
@@ -816,6 +816,95 @@ footer {
 
 .policy-text .section-header {
 	margin: 4rem 0;
+}
+
+.modal-postmessage {
+	display: none;
+	/* display: flex;	 */
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--br-mini);
+	background: #1E1E1E;
+	padding: 4vw 2vw;
+}
+
+.modal-postmessage .success,
+.modal-postmessage .error 
+{
+	display: none;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 5rem;
+}
+
+.tab > input[type="radio"] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4,
+#tab-btn-5:checked~#content-5,
+#tab-btn-6:checked~#content-6,
+#tab-btn-7:checked~#content-7,
+#tab-btn-8:checked~#content-8 {
+  display: block;
+}
+
+.tab > label {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+	text-transform: uppercase;
+	font-size: var(--fz-4xl);
+  transition: color .15s ease-in-out, border-color .15s ease-in-out;
+  color: #000;
+  background: 0 0;
+  border-bottom: 1px solid transparent;
+}
+
+.tab > label:hover {
+	color: #FF5500;
+  border-bottom-color: #FF5500;
+}
+
+.tab > input[type="radio"]:checked + label {
+  cursor: default;
+  font-weight: bold;
+  color: #FF5500;
+  border-bottom-color: #000;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: var(--fz-3xl);
+	font-weight: normal;
+}
+th, td {
+	border-bottom: 1px solid #ddd;
+	padding: 8px;
+	padding-top: 1.5rem;
+	text-align: left;
+}
+th {
+	background-color: #f2f2f2;
+	font-weight: bold;
 }
 
 @media (max-width: 1280px) {
