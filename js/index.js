@@ -13,10 +13,10 @@ $(window).on('load', function () {
     },
 	});
 
-	const redirect = document.querySelector(".swiper-wrapper");
+/* 	const redirect = document.querySelector(".swiper-wrapper");
 	redirect.addEventListener('click', function() {
-		window.location.href = "http://stackoverflow.com";
-})
+		openModal();
+}) */
 
 	// Слайдер изделий
 	const productsSlider = new Swiper('.products-slider', {

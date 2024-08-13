@@ -19,7 +19,7 @@
           <a href="#about" class="header-item">О нас</a>
           <a href="#products" class="header-item">Наши услуги</a>
           <a href="#cases" class="header-item">Кейсы</a>
-          <a href="#" class="header-item">Заказать мерч</a>
+          <a type="button" data-modal-target="#callback-form" href="" class="header-item">Заказать мерч</a>
           <a href="#footer" class="header-item">Контакты</a>
           <a href="tel:+79876002813" class="header-item last">+7 (987) 600-28-13</a>
 				</div>
@@ -280,7 +280,11 @@
 			</section>
 
 			<section id="feedback">
-				<form method="post" action="" class="feedback-form" action="">
+				<div class="modal-postmessage">
+					<h3 class="success"><b>Ваша заявка на рассмотрении!</b><br><br>В ближайшее время наш менеджер свяжется с вами для уточнения деталей и подтверждения информации.</h3>
+					<h3 class="error"><b>Произошла ошибка!</b><br><br>Возможно у вас нестабильный интернет или включен VPN.</h3>
+				</div>
+				<form method="post" id="feedback-form">
 					<div>
 						<h1 class="section-header" style="white-space: nowrap">Заказать мерч</h1>
 						<span class="feedback-bg">Создаем<br>стиль,<br>который<br>объединяет</span>
@@ -292,15 +296,14 @@
 							Предложим наиболее выгодные условия
 							сотрудничества у нас.
 						</p>
-						<input id="name" type="text" placeholder="Имя">
+						<input id="name" name="user_name2" type="text" placeholder="Имя">
 						<div style="display: flex; gap: 2rem; width: 100%; margin: 1rem 0 .5rem">
-							<input id="phone" type="text" placeholder="Телефон">
-							<input id="comment" type="text" placeholder="Комментарий">
+							<input id="phone" name="phone_number2" type="text" placeholder="Телефон">
+							<input id="comment" name="comment" type="text" placeholder="Комментарий">
 						</div>
-						<p class="personal-agreement">Нажимая на кнопку, Вы даете согласие на обработку <a href="">персональных данных</a></p>
+						<p class="personal-agreement">Нажимая на кнопку, Вы даете согласие на обработку <a href="policy.html" target="_blank">персональных данных</a></p>
 					</div>
-	
-					<button id="feedback-btn" type="submit" href="">Оставить заявку</button>
+					<input id="feedback-btn" type="submit" value="Оставить заявку">
 				</form>
 			</section>
 
@@ -362,24 +365,29 @@
 
 		<div class="modals">
 			<div class="modals-overlay js-modal-close">
-				<div class="modal" id="#callback-form">
+				<div class="modal" id="callback-form">
 					<div class="modal-header"><button class="modal-close js-modal-close" type="button"></button></div>
 					<img src="images/modal-bg.png" class="modal-image"></img>
-					<div class="modal-content">
+					<form class="modal-content" id="orderForm">
 						<h3 class="modal-title">Создадим мерч мечты!</h3>
 						<p class="desc">Оставьте свои контактные данные,<br>
 							и мы свяжемся с вами для уточнения деталей
 						</p>
-						<input class="name" type="text" placeholder="ИМЯ">
-						<input class="phone" type="text" placeholder="ТЕЛЕФОН">
-						<input class="email" type="text" placeholder="ПОЧТА">
-						<input class="details" type="text" placeholder="ДЕТАЛИ ЗАКАЗА">
-						<a class="send-btn" type="button">Отправить</a>
+						<input class="name" name="user_name" type="text" placeholder="ИМЯ">
+						<input class="phone" name="phone_number" type="text" placeholder="ТЕЛЕФОН">
+						<input class="email" name="email_address" type="text" placeholder="ПОЧТА">
+						<input class="details" name="order_details" type="text" placeholder="ДЕТАЛИ ЗАКАЗА">
+						<input class="send-btn" type="submit" value="Отправить">
 						<p class="desc">
-							<a href="policy.html">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</a>
+							<a href="policy.html" target="_blank">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</a>
 						</p>
+					</form>
+					<div class="modal-postmessage">
+						<h3 class="success"><b>Ваша заявка на рассмотрении!</b><br><br>В ближайшее время наш менеджер свяжется с вами для уточнения деталей и подтверждения информации.</h3>
+						<h3 class="error"><b>Произошла ошибка!</b><br><br>Возможно у вас нестабильный интернет или включен VPN.</h3>
 					</div>
 				</div>
+
 			</div>
 		</div>
 

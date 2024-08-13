@@ -531,10 +531,20 @@ footer {
 	padding: 2.5rem 2rem 4rem;
 }
 
-.feedback-form {
+#feedback-form {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
+	max-height: 1000px;
+	transition: max-height 0.3s ease-out;
+	overflow: hidden;
+}
+
+#feedback-form.hidden {
+	opacity: 0;
+	max-width: 0;
+	max-height: 0;
+	transition: max-height .3s;
 }
 
 #name, #phone, #comment {
@@ -557,6 +567,13 @@ footer {
 	outline: #F76326 3px solid;
 }
 
+#feedback-btn:hover {
+	background: #CF4500;
+}
+
+#feedback-form > * {
+	width: 50%;
+}
 #feedback-btn {
 	width: 100%;
 	height: 6.25rem;
@@ -566,17 +583,10 @@ footer {
 	background: #FF5500;
 	margin-top: 5.5rem;
 	border: none;
+	cursor: pointer;
 	border-radius: var(--br-mini);
 	text-align: center;
 	transition: background-color .3s;
-}
-
-#feedback-btn:hover {
-	background: #CF4500;
-}
-
-.feedback-form > * {
-	width: 50%;
 }
 
 #feedback .section-header, 
@@ -695,19 +705,40 @@ footer {
 }
 .modal-header {
 	position: absolute;
+	width: 100%;
 }
+
 .modal-close {
+	position: absolute;
 	border: none;
   width: 19px;
   height: 19px;
 	cursor: pointer;
+	background: #000;
+	border-radius: var(--br-5xl);
+	padding: 1rem;
+	margin: 15px;
+	right: 0;
+}
+
+.modal-close::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+
 	background: transparent;
   background-image: url(../images/icons/cross.svg);
   background-position: center;
-  background-size: 19px 19px;
+  background-size: 24px 24px;
   background-repeat: no-repeat;
-	margin: 15px;
+
+
+	z-index: 0;
 }
+
 .modal-content {
 	display: flex;
 	flex-direction: column;
@@ -754,6 +785,8 @@ footer {
 	align-items: center;
 	width: 100%;
 	color: #000;
+	cursor: pointer;
+	text-transform: uppercase;
 	font-weight: 600;
 	background: #fff;
 	border-radius: var(--br-mini);
@@ -824,8 +857,14 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border-radius: var(--br-mini);
-	background: #1E1E1E;
+	background: inherit;
 	padding: 4vw 2vw;
+}
+
+.modal-postmessage.visible {
+	display: flex;
+	opacity: 1;
+	transition: all .5s;
 }
 
 .modal-postmessage .success,

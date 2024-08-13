@@ -10,6 +10,11 @@ a {
 	color: inherit;
 }
 
+::selection {
+	background: #DFDFDF;
+	}
+	
+
 /* p, b {
 	line-height: 170%;
 } */

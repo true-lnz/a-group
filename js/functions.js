@@ -127,10 +127,14 @@ $(window).on('load', function () {
 	}
 
 	function closeModal() {
-		$('.modal').fadeOut();
-		$('.modals').fadeOut();
-		$('body').removeClass('modals-scroll');
-	}
+    $('.modal').fadeOut(300, function() {
+        $('#orderForm').show();
+    });
+    $('.modals').fadeOut(300, function() {
+        $('body').removeClass('modals-scroll');
+    });
+    $('.modal .modal-postmessage').removeClass('visible');
+}
 
 	$('[data-modal-target]').on('click', function (evt) {
 		evt.preventDefault();
