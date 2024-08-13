@@ -882,6 +882,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 5rem;
+	margin-top: 2rem;
 }
 
 .tab > input[type="radio"] {
