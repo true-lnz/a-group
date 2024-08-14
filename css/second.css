@@ -27,6 +27,40 @@
 	background: #666;
 }
 
+.types .swiper-slide {
+	background: transparent;
+}
+
+.form__button {    
+	position: relative;
+	display: flex;    
+	background-color: rgba(0, 0, 0, 0.349);
+	padding: 20px 20px;   
+	color: green;
+	font-size: 16px;    
+	justify-content: center;
+	text-decoration: none;    
+	text-transform: uppercase;
+	overflow: hidden;    
+	width: 100%;
+	border: 1px solid green;    
+	transition: .5s;
+	margin-top: 20px;    
+	margin-bottom: 10px;
+	letter-spacing: 4px;    
+	p {
+		font-weight: 500;    }
+	}
+.form__button:hover {
+	background: green;
+	color: #fff;
+	border-radius: 5px;    
+	box-shadow: 0 0 5px green,
+							0 0 25px green,                
+							0 0 50px green,
+							0 0 100px green;  
+	}
+
 .upper-text > * {
 	line-height: 1;
 }
@@ -143,6 +177,8 @@
 .materials-item .text, .materials-item .header-text {
 	color: #fff;
 	margin: 2rem 2.5rem;
+	opacity: 1;
+	transition: opacity .4s;
 	z-index: 888;
 }
 
@@ -174,17 +210,22 @@
 	width: 100%;
 	height: 100%;
 	background: #C1C0BD;
-	transition: opacity .4s;
+	transition: opacity .3s;
 	z-index: 888;
 }
 
 .overlay .desc, .overlay .text {
 	transform: translateY(2rem);
-	transition: transform .5s;
+	transition: transform .6s;
 }
 
 .materials-item:hover .overlay {
 	opacity: 1;
+	cursor: pointer;
+}
+
+.materials-item:hover .header-text {
+	opacity: 0;
 }
 
 
@@ -272,11 +313,9 @@
 }
 
 .product-card {
-	width: 564px;
-	height: 618px;
-	border-radius: var(--br-xl);
-	overflow: hidden;
-	background-color: #eee;
+	display: flex;
+	flex-direction: column;
+
 }
 
 .swiper-wrapper {
@@ -284,17 +323,28 @@
 }
 
 .product-container {
-	/* width: 100%; */
-	/* height: 100%; */
+	position: relative;
+	width: 35.25rem;
+	height: 28.8125rem;
+	border-radius: var(--br-xl);
+	overflow: hidden;
+	background-color: #eee;
 }
 
 .product-header {
+	font-size: var(--fz-xxl);
+	text-transform: uppercase;
+	padding: 2rem;
 }
 
 .product-image {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
+}
+
+.modal-postmessage b {
+	font-size: var(--fz-xl);
 }
 
 @media (min-width: 1280px) {
