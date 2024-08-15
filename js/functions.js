@@ -134,6 +134,7 @@ $(window).on('load', function () {
         $('body').removeClass('modals-scroll');
     });
     $('.modal .modal-postmessage').removeClass('visible');
+		
 }
 
 	$('[data-modal-target]').on('click', function (evt) {

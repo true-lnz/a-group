@@ -94,6 +94,7 @@
 	height: 4.6875rem;
 	border-radius: var(--br-5xl);
 	overflow: hidden;
+	cursor: pointer;
 	transition: all .5s;
 }
 
@@ -255,6 +256,10 @@
 	position: relative;
 }
 
+.steps-bg {
+	width: 100%;
+}
+
 .types .order-btn {
 	position: static;
 	font-size: var(--fz-3xl);
@@ -275,6 +280,7 @@
 .technologies .cards-item {
 	width: 35.25rem;
 	flex-grow: 0;
+	cursor:pointer;
 	background: var(--color-lightgray);
 }
 
@@ -315,7 +321,11 @@
 .product-card {
 	display: flex;
 	flex-direction: column;
+	cursor: grab;
+}
 
+.product-card:active {
+	cursor: grabbing;
 }
 
 .swiper-wrapper {

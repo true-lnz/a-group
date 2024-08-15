@@ -57,7 +57,7 @@ $(window).on('load', function () {
     mousewheel: {
         invert: false,
     },
-    spaceBetween: 80,
+    spaceBetween: 60,
     slidesPerView: 3
 });
 
@@ -133,10 +133,11 @@ window.addEventListener('scroll', function () {
 		return;
 	}
 
-	const rect = document.querySelector('.products-slider').getBoundingClientRect();
-
-  if ($(window).scrollTop() >= 1100+window.pageXOffset) {
-      $(window).scrollTop(1100+window.pageXOffset);
-    }
+	// if (!isEndReached && window.scrollY >= 1100+window.pageXOffset) {
+	// 	window.scrollTo({
+	// 		top: 1100+window.pageXOffset,
+	// 		behavior: "instant",
+	// 	});
+  //   }
 	});
 });
