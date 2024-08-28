@@ -56,7 +56,7 @@ $(document).ready(function() {
 				details: comment
 		};
 		
-		if (!formData.name || !formData.phone || !formData.email || !formData.details) {
+		if (!formData.name || !formData.phone || !formData.details) {
 			alert("Пожалуйста, заполните все поля формы.");
 			return; 
 		}
@@ -84,4 +84,48 @@ $(document).ready(function() {
 				}
 		});
 	});
+});
+
+
+$(window).on('load', function () {
+	// Модальные окна
+	function openModal(selector) {
+		$('.modals').fadeIn();
+		$(selector).fadeIn();
+		$('body').addClass('modals-scroll');
+	}
+	function closeModal() {
+    $('.modal').fadeOut(300, function() {
+        $('#orderForm').show();
+    });
+    $('.modals').fadeOut(300, function() {
+        $('body').removeClass('modals-scroll');
+    });
+    $('.modal .modal-postmessage').removeClass('visible');
+}
+
+	$('[data-modal-target]').on('click', function (evt) {
+		evt.preventDefault();
+		let target = $(this).attr('data-modal-target');
+		openModal(target);
+	})
+
+	$(document).on('click', function (evt) {
+		if ($(evt.target).hasClass('js-modal-close')) {
+			closeModal();
+		}
+	});
+
+	$(document).on('keydown', function (evt) {
+		if (evt.keyCode == 27) {
+			closeModal();
+		}
+	});
+
+	window.api = {
+		modals: {
+			open: openModal,
+			close: closeModal,
+		}
+	};
 });

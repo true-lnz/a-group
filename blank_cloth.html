@@ -3,35 +3,70 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-config" content="favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<title>Бланковая одежда | A-GROUP - Стиль который объединяет</title>
+    <meta name='description' content='Более 100 выполненных заказов для ресторанов, нефтяных компаний, спортивных клубов и университетов. Изготовление одежды и корпоративных подарков, отражающих ценности вашего бизнеса.'>
+		<meta name='keywords' content='корпоративная одежда, сувениры, промо-продукция, мерч, дизайн, изготовление одежды, корпоративные подарки'>
+
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/second.css" />
 		<link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="js/nice-select/nice-select.css">
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
   </head>
   <body>
     <div class="root">
 			<div class="header">
         <div class="header-child">
 					<a href="/" class="header-item">A-group</a>
-          <a href="/#about" class="header-item">О нас</a>
-          <a href="/#products" class="header-item">Наши услуги</a>
-          <a href="/#cases" class="header-item">Кейсы</a>
-          <a type="button" data-modal-target="#callback-form" href="" class="header-item">Заказать мерч</a>
-          <a href="#footer" class="header-item">Контакты</a>
+          <a href="/#about" class="header-item second">О нас</a>
+          <a href="/#products" class="header-item second">Наши услуги</a>
+          <a href="/#cases" class="header-item second">Кейсы</a>
+          <a type="button" data-modal-target="#callback-form" href="" class="header-item second">Заказать мерч</a>
+          <a href="#footer" class="header-item second">Контакты</a>
           <a href="tel:+79876002813" class="header-item last">+7 (987) 600-28-13</a>
+				</div>
+				<div class="burger-btn">
+					<svg class="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+						<path fill="currentColor" d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+					</svg>
+					<svg class="close" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
 				</div>
       </div>
 
+			<div class="menu-overlay">
+				<div class="menu">
+						<ul class="menu-list">
+								<li><a href="/">ГЛАВНАЯ</a></li>
+								<li><a href="corporate_cloth.html">КОРПОРАТИВНАЯ ОДЕЖДА</a></li>
+								<li><a href="souvenir_product.html">СУВЕНИРНАЯ ПРОДУКЦИЯ</a></li>
+								<li><a href="blank_cloth.html">БЛАНКОВАЯ ОДЕЖДА</a></li>
+						</ul>	
+						<div class="menu-buttons">
+							<button data-modal-target="#callback-form" href="" class="order-btn btn-style-1">Заказать мерч!</button>
+							<a href="mailto:a-group.russia@mail.ru" class="contact-email">A-GROUP.RUSSIA@MAIL.RU</a>
+						</div>
+				</div>
+		</div>
+			
 			<main>
 				<section class="blank-cloth">
 					<div class="hero">
 						<div class="hero-container">
 							<span class="upper-text">
-								<h1 class="section-header"><small>Изготавливаем</small>&nbsp;&nbsp;Бланковую</h1><br>
-								<h1 class="section-header">Одежду&nbsp;&nbsp;<small>на заказ</small></h1>
+								<h1 class="section-header"><small>Изготавливаем</small> Бланковую</h1><br>
+								<h1 class="section-header">Одежду<small> на&nbsp;заказ</small></h1>
 							</span>
 							<p class="hero-desc">Мы также специализируемся на пошиве высококачественной<br>
 								бланковой одежды и текстильных изделий, предлагаем широкий<br>
@@ -41,6 +76,7 @@
 								Наша цель - предоставить лучшие  решения для частных клиентов<br>
 								и дизайнеров которые ищут стильную и функциональную одежду<br>без брендинга.
 							</p>
+							<img loading="lazy" class="mobile-banner" src="images/mobile-banner-2.png" alt="">
 							<a class="order-btn btn-style-1" href="" type="button" data-modal-target="#callback-form">Заказать мерч!</a>
 						</div>
 					</div>
@@ -65,7 +101,7 @@
 						<li class="products-item">
 							<a href="" data-modal-target="#callback-form">
 								<p class="product-name upper-text">
-									Быстрое пополнение
+									Быстрое выполнение
 								</p>
 								<img class="product-image" loading="lazy" src="images/blank_3.png"></img>
 								<div class="arrow-right"></div>
@@ -168,16 +204,18 @@
 							</div>
 						</div>
 					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
 
 				<div class="desc-block">
-					<p class="description upper-text center">
-							<b>Мы рады предложить вам широкий выбор параметров бланковых моделей!<br>
-								Наша команда поможет подобрать нужное качество материала, крой, плотность<br>
-								и цветовую палитру.  Свяжитесь с нами, и мы оперативно обсудим всем вопросы, а также<br>
-								подскажем как лучше сделать исходя из своего опыта!</br>
+					<p class="description center">
+						Мы рады предложить вам широкий выбор параметров бланковых моделей!<br>
+						Наша команда поможет подобрать нужное качество материала, крой, плотность<br>
+						и цветовую палитру.  Свяжитесь с нами, и мы оперативно обсудим всем вопросы, а также<br>
+						подскажем как лучше сделать исходя из своего опыта!
 						</p>
-					<a class="order-btn" type="button" href="" data-modal-target="#callback-form">Заказать мерч!</a>
+					<a class="order-btn" type="button" data-modal-target="#callback-form" href="">Заказать мерч!</a>
 				</div>
 			</section>
 
@@ -189,10 +227,10 @@
 						— мы предложим подходящие варианты.
 					</p>
 					<div class="colors-container">
-						<div class="color-pick" style="background: #000;"><img src="images/color1.jpg" alt=""></div>
-						<div class="color-pick" style="background: #000;"><img src="images/color2.jpg" alt=""></div>
-						<div class="color-pick" style="background: #000;"><img src="images/color3.jpg" alt=""></div>
-						<div class="color-pick" style="background: #000;"><img src="images/color4.jpg" alt=""></div>
+						<div class="color-pick" style="background: #000;"><img loading="lazy" src="images/color1.jpg" alt=""></div>
+						<div class="color-pick" style="background: #000;"><img loading="lazy" src="images/color2.jpg" alt=""></div>
+						<div class="color-pick" style="background: #000;"><img loading="lazy" src="images/color3.jpg" alt=""></div>
+						<div class="color-pick" style="background: #000;"><img loading="lazy" src="images/color4.jpg" alt=""></div>
 						<div class="color-pick" style="background: #007A7B;"></div>
 						<div class="color-pick" style="background: #6E5CA1;"></div>
 						<div class="color-pick" style="background: #ffffff;"></div>
@@ -253,18 +291,18 @@
 							</div>
 							<div class="materials-column">
 								<div class="materials-item b">
-									<div class="header-text">Футер двухнитка<br>петля/начес</div>
+									<div class="header-text">Футер двухнитка <br>петля/начес</div>
 									<div class="overlay">
-										<div class="text">Футер двухнитка<br>петля/начес</div>
+										<div class="text">Футер двухнитка <br>петля/начес</div>
 										<div class="desc">Плотность от 250 до 500 гр/м2.</div>
 										<div class="desc">В основном из него делают футболки, свитшоты, худи.</div>
 									</div>
 									<img src="images/type_2.png" loading="lazy" class="materials-image"></img>
 								</div>							
 								<div class="materials-item b">
-									<div class="header-text">Футер трехнитка<br>петля/начес</div>
+									<div class="header-text">Футер трехнитка <br>петля/начес</div>
 									<div class="overlay">
-										<div class="text">Футер трехнитка<br>петля/начес</div>
+										<div class="text">Футер трехнитка <br>петля/начес</div>
 										<div class="desc">Плотность от 250 до 500 гр/м2.</div>
 										<div class="desc">В основном из него делают худи, зип-худи.</div>
 									</div>
@@ -282,6 +320,48 @@
 							</div>
 						</div>
 				</div>
+				<div class="materials-container mobile">
+					<div class="cards-container">
+						<div class="cards-row">
+							<div class="cards-item">
+								<img src="images/type_1.png" class="cards-image"></img>
+								<div class="info">
+									<div class="cards-header">Кулирная гладь</div>
+									<p class="desc">
+										Качество «пенье» и «пенье компакт» (высшие уровни хлопка) 
+										плотность от 150 до 300 гр/м2, вся цветовая гамма.
+									</p>
+									<p class="desc">
+											В основном из него делают футболки.
+									</p>
+								</div>
+							</div>
+							<div class="cards-item">
+								<img src="images/type_2.png" class="cards-image"></img>
+								<div class="info">
+									<div class="cards-header">Футер двухнитка<br> петля/начес</div>
+									<p class="desc">Плотность от 250 до 500 гр/м2.</p>
+									<p class="desc">В основном из него делают футболки, свитшоты, худи.</p>
+								</div>
+							</div>
+							<div class="cards-item">
+								<img src="images/type_3.png" class="cards-image"></img>
+								<div class="info">
+									<div class="cards-header">Футер трехнитка<br> петля/начес</div>
+									<p class="desc">Плотность от 250 до 500 гр/м2.</p>
+									<p class="desc">В основном из него делают худи, зип-худи.</p>
+								</div>
+							</div>
+							<div class="cards-item">
+								<img src="images/type_4.png" class="cards-image"></img>
+								<div class="info">
+									<div class="cards-header">Пике</div>
+									<p class="desc">Качество «пенье» и «пенье компакт» (высшие уровни хлопка) плотность от 150 до 200 гр/м2, вся цветовая гамма.</p>
+									<p class="desc">В основном из него делают футболки поло.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 			</section>
 
 			<section class="prices">
@@ -317,45 +397,45 @@
 							<tbody>
 									<tr>
 											<td>Карде (стандарт/160 гр/м2)</td>
-											<td>680₽</td>
-											<td>570₽</td>
-											<td>510₽</td>
-											<td>470₽</td>
+											<td>680&#8381;</td>
+											<td>570&#8381;</td>
+											<td>510&#8381;</td>
+											<td>470&#8381;</td>
 									</tr>
 									<tr>
 											<td>Пенье компакт (стандарт/150 гр/м2)</td>
-											<td>850₽</td>
-											<td>800₽</td>
-											<td>740₽</td>
-											<td>720₽</td>
+											<td>850&#8381;</td>
+											<td>800&#8381;</td>
+											<td>740&#8381;</td>
+											<td>720&#8381;</td>
 									</tr>
 									<tr>
 											<td>Пенье компакт (стандарт/200 гр/м2)</td>
-											<td>1550₽</td>
-											<td>1370₽</td>
-											<td>1250₽</td>
-											<td>1150₽</td>
+											<td>1550&#8381;</td>
+											<td>1370&#8381;</td>
+											<td>1250&#8381;</td>
+											<td>1150&#8381;</td>
 									</tr>
 									<tr>
 											<td>Пенье компакт (oversize/200 гр/м2)</td>
-											<td>1550₽</td>
-											<td>1370₽</td>
-											<td>1250₽</td>
-											<td>1150₽</td>
+											<td>1550&#8381;</td>
+											<td>1370&#8381;</td>
+											<td>1250&#8381;</td>
+											<td>1150&#8381;</td>
 									</tr>
 									<tr>
 											<td>Пенье компакт (oversize/230 гр/м2)</td>
-											<td>1650₽</td>
-											<td>1550₽</td>
-											<td>1400₽</td>
-											<td>1250₽</td>
+											<td>1650&#8381;</td>
+											<td>1550&#8381;</td>
+											<td>1400&#8381;</td>
+											<td>1250&#8381;</td>
 									</tr>
 									<tr>
 											<td>Пенье компакт (поло/230 гр/м2)</td>
-											<td>1690₽</td>
-											<td>1590₽</td>
-											<td>1430₽</td>
-											<td>1320₽</td>
+											<td>1690&#8381;</td>
+											<td>1590&#8381;</td>
+											<td>1430&#8381;</td>
+											<td>1320&#8381;</td>
 									</tr>
 							</tbody>
 						</table>
@@ -374,17 +454,17 @@
 							<tbody>
 									<tr>
 											<td>Пенье компакт (oversize/200 гр/м2)</td>
-											<td>2320₽</td>
-											<td>2210₽</td>
-											<td>1970₽</td>
-											<td>1820₽</td>
+											<td>2320&#8381;</td>
+											<td>2210&#8381;</td>
+											<td>1970&#8381;</td>
+											<td>1820&#8381;</td>
 									</tr>
 									<tr>
 											<td>Пенье компакт (oversize/230 гр/м2)</td>
-											<td>2370₽</td>
-											<td>2260₽</td>
-											<td>2020₽</td>
-											<td>1870₽</td>
+											<td>2370&#8381;</td>
+											<td>2260&#8381;</td>
+											<td>2020&#8381;</td>
+											<td>1870&#8381;</td>
 									</tr>
 							</tbody>
 						</table>
@@ -403,10 +483,10 @@
 							<tbody>
 									<tr>
 											<td>Пенье компакт (oversize/320 гр/м2)</td>
-											<td>2870₽</td>
-											<td>2650₽</td>
-											<td>2480₽</td>
-											<td>2230₽</td>
+											<td>2870&#8381;</td>
+											<td>2650&#8381;</td>
+											<td>2480&#8381;</td>
+											<td>2230&#8381;</td>
 									</tr>
 							</tbody>
 						</table>
@@ -425,17 +505,17 @@
 							<tbody>
 									<tr>
 											<td>Пенье компакт (стандарт/320 гр/м2)</td>
-											<td>3350₽</td>
-											<td>3280₽</td>
-											<td>3100₽</td>
-											<td>2900₽</td>
+											<td>3350&#8381;</td>
+											<td>3280&#8381;</td>
+											<td>3100&#8381;</td>
+											<td>2900&#8381;</td>
 									</tr>
 									<tr>
 											<td>Пенье компакт (oversize/320 гр/м2)</td>
-											<td>3350₽</td>
-											<td>3280₽</td>
-											<td>3100₽</td>
-											<td>2900₽</td>
+											<td>3350&#8381;</td>
+											<td>3280&#8381;</td>
+											<td>3100&#8381;</td>
+											<td>2900&#8381;</td>
 									</tr>
 							</tbody>
 						</table>
@@ -454,10 +534,10 @@
 							<tbody>
 									<tr>
 											<td>Пенье компакт (oversize/320 гр/м2)</td>
-											<td>3580₽</td>
-											<td>3480₽</td>
-											<td>3350₽</td>
-											<td>3150₽</td>
+											<td>3580&#8381;</td>
+											<td>3480&#8381;</td>
+											<td>3350&#8381;</td>
+											<td>3150&#8381;</td>
 									</tr>
 							</tbody>
 						</table>
@@ -476,10 +556,10 @@
 							<tbody>
 									<tr>
 											<td>Холлофайбер (стандарт/oversize)</td>
-											<td>3780₽</td>
-											<td>3580₽</td>
-											<td>3350₽</td>
-											<td>3150₽</td>
+											<td>3780&#8381;</td>
+											<td>3580&#8381;</td>
+											<td>3350&#8381;</td>
+											<td>3150&#8381;</td>
 									</tr>
 							</tbody>
 						</table>
@@ -498,17 +578,17 @@
 							<tbody>
 									<tr>
 											<td>Пенье-компакт (карго)</td>
-											<td>3420₽</td>
-											<td>3320₽</td>
-											<td>3110₽</td>
-											<td>3040₽</td>
+											<td>3420&#8381;</td>
+											<td>3320&#8381;</td>
+											<td>3110&#8381;</td>
+											<td>3040&#8381;</td>
 									</tr>
 									<tr>
 										<td>Пенье-компакт (спортивные)</td>
-										<td>2280₽</td>
-										<td>2170₽</td>
-										<td>1950₽</td>
-										<td>1820₽</td>
+										<td>2280&#8381;</td>
+										<td>2170&#8381;</td>
+										<td>1950&#8381;</td>
+										<td>1820&#8381;</td>
 								</tr>
 							</tbody>
 						</table>
@@ -527,10 +607,10 @@
 							<tbody>
 									<tr>
 											<td>Пенье-компакт (мужские/женские)</td>
-											<td>2280₽</td>
-											<td>2170₽</td>
-											<td>1950₽</td>
-											<td>1820₽</td>
+											<td>2280&#8381;</td>
+											<td>2170&#8381;</td>
+											<td>1950&#8381;</td>
+											<td>1820&#8381;</td>
 									</tr>
 							</tbody>
 						</table>
@@ -550,13 +630,11 @@
 					</div>
 					<div class="feedback-data-input">
 						<p class="info">
-							Обсудим ваш проект.<br>
-							Подберем оптимальное решение.<br>
-							Предложим наиболее выгодные условия
-							сотрудничества у нас.
+							Обсудим ваш проект, подберем оптимальное решение, предложим наиболее выгодные условия
+							сотрудничества.
 						</p>
 						<input id="name" name="user_name2" type="text" placeholder="Имя">
-						<div style="display: flex; gap: 2rem; width: 100%; margin: 1rem 0 .5rem">
+						<div class="feedback-data-input-row">
 							<input id="phone" name="phone_number2" type="text" placeholder="Телефон">
 							<input id="comment" name="comment" type="text" placeholder="Комментарий">
 						</div>
@@ -600,18 +678,18 @@
 			<div class="footer-row">
 				<div class="footer-item">
 					<h1 class="a-group"><a href="/">A-GROUP</a></h1>
+					<p class="mobile">Создаем стиль, который объединяет.</p>
 				</div>
 				<div class="footer-item">
 					<ul class="a-group-info">
 						<li>ИП ФАТТАХОВ А.Р.</li>
 						<li>ИНН 027817725169</li>
 						<li>ОГРН 323028000075040</li>
-						<li><a href="policy.html">Политика конфиденциональности</a></li>
+						<li><a href="policy.html" target="_blank">Политика конфиденциальности</a></li>
 					</ul>
 				</div>
 			</div>
-
-			<div class="footer-row" style="align-items: flex-end">
+			<div class="footer-row last" style="align-items: flex-end">
 				<div class="footer-item">
 					<p class="f-paragraph">ОСТАЛИСЬ ВОПРОСЫ? СВЯЖИТЕСЬ С НАМИ</p>
 					<a class="f-phone" href="tel:+79876002813">+7 (987) 600-28-13</a>
@@ -634,7 +712,7 @@
 						</p>
 						<input class="name" name="user_name" type="text" placeholder="ИМЯ">
 						<input class="phone" name="phone_number" type="text" placeholder="ТЕЛЕФОН">
-						<input class="email" name="email_address" type="text" placeholder="ПОЧТА">
+						<input class="email" name="email_address" type="text" placeholder="ПОЧТА (необязательно)">
 						<input class="details" name="order_details" type="text" placeholder="ДЕТАЛИ ЗАКАЗА">
 						<input class="send-btn" type="submit" value="Отправить">
 						<p class="desc">
@@ -654,11 +732,10 @@
 
 	<script src="js/jquery/jquery-3.7.1.min.js"></script>
 	<script src="js/swiper/swiper-bundle.min.js"></script>
-	<script src="js/nice-select/jquery.nice-select.min.js"></script>
-	<script src="js/fancybox/jquery.fancybox.min.js"></script>
-	<script src="js/functions.js"></script>
-	<script src="js/forms.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/scroll_controller.js"></script>
+	<script src="js/forms.js" defer></script>
+	<script src="js/mobile.js" defer></script>
 
 </body>
 </html>

@@ -1,34 +1,40 @@
-// Общий для всего проекта JS-код
-
-$(window).on('load', function () {
-	// Галерея
-	document.querySelectorAll('.gallery__slider').forEach(n => {
-		const gallerySlider = new Swiper(n.querySelector('.swiper'), {
-			// autoplay: true,
-			// autoplay: {
-			// 	delay: 4000,
-			// 	disableOnInteraction: false,
-			// },
-			slidesPerView: 'auto',
-			watchSlidesProgress: true,
-			navigation: {
-				nextEl: n.querySelector('.slider-button--next'),
-				prevEl: n.querySelector('.slider-button--prev'),
-			},
-
-			breakpoints: {
-				320: {
-					spaceBetween: 10,
+document.addEventListener("DOMContentLoaded", function() {
+	function initializeMobileView() {
+		if (document.body.clientWidth <= 576) {
+			const heroSlider_mobile = new Swiper('.hero-slider-mobile', {
+				loop: true,
+				autoplay: {
+					delay: 4000,
 				},
-
-				768: {
-					spaceBetween: 20,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
 				},
+			});
 
-				1601: {
-					spaceBetween: 50,
-				},
-			}
-		});
+			const clientsBlock = document.querySelector('#clients');
+			clientsBlock.classList.add("mobile");
+		}
+	}
+
+	initializeMobileView();
+	window.addEventListener('resize', function() {
+		initializeMobileView();
 	});
+
+	const burgerBtn = document.querySelector('.burger-btn');
+	const header = document.querySelector('.header');
+	const menuOverlay = document.querySelector('.menu-overlay');
+
+	burgerBtn.addEventListener('click', function() {
+			menuOverlay.classList.toggle('active');
+			header.classList.toggle('mobile-shown');
+			burgerBtn.classList.toggle('active');
+	});
+		menuOverlay.addEventListener('click', function() {
+			menuOverlay.classList.remove('active');
+			header.classList.remove('mobile-shown');
+			burgerBtn.classList.remove('active');
+		});
 });
+

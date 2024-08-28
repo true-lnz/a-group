@@ -3,12 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-config" content="favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<title>Корпоративная одежда | A-GROUP - Стиль который объединяет</title>
+    <meta name='description' content='Более 100 выполненных заказов для ресторанов, нефтяных компаний, спортивных клубов и университетов. Изготовление одежды и корпоративных подарков, отражающих ценности вашего бизнеса.'>
+    <meta name='keywords' content='корпоративная одежда, сувениры, промо-продукция, мерч, дизайн, изготовление одежды, корпоративные подарки'>
+
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/second.css" />
 		<link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="js/nice-select/nice-select.css">
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="fonts/fonts.css" />
   </head>
   <body>
@@ -16,27 +28,50 @@
 			<div class="header">
         <div class="header-child">
 					<a href="/" class="header-item">A-group</a>
-          <a href="/#about" class="header-item">О нас</a>
-          <a href="/#products" class="header-item">Наши услуги</a>
-          <a href="/#cases" class="header-item">Кейсы</a>
-          <a type="button" data-modal-target="#callback-form" href="" class="header-item">Заказать мерч</a>
-          <a href="#footer" class="header-item">Контакты</a>
+          <a href="/#about" class="header-item second">О нас</a>
+          <a href="/#products" class="header-item second">Наши услуги</a>
+          <a href="/#cases" class="header-item second">Кейсы</a>
+          <a type="button" data-modal-target="#callback-form" href="" class="header-item second">Заказать мерч</a>
+          <a href="#footer" class="header-item second">Контакты</a>
           <a href="tel:+79876002813" class="header-item last">+7 (987) 600-28-13</a>
 				</div>
+				<div class="burger-btn">
+					<svg class="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+						<path fill="currentColor" d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+					</svg>
+					<svg class="close" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+				</div>
       </div>
+			<div class="menu-overlay">
+				<div class="menu">
+						<ul class="menu-list">
+								<li><a href="/">ГЛАВНАЯ</a></li>
+								<li><a href="corporate_cloth.html">КОРПОРАТИВНАЯ ОДЕЖДА</a></li>
+								<li><a href="souvenir_product.html">СУВЕНИРНАЯ ПРОДУКЦИЯ</a></li>
+								<li><a href="blank_cloth.html">БЛАНКОВАЯ ОДЕЖДА</a></li>
+						</ul>	
+						<div class="menu-buttons">
+							<button data-modal-target="#callback-form" href="" class="order-btn btn-style-1">Заказать мерч!</button>
+							<a href="mailto:a-group.russia@mail.ru" class="contact-email">A-GROUP.RUSSIA@MAIL.RU</a>
+						</div>
+				</div>
+		</div>
 
 			<main>
 				<section class="corporate-cloth">
 					<div class="hero">
 						<div class="hero-container">
 							<span class="upper-text">
-								<h1 class="section-header"><small>Изготавливаем</small>&nbsp;&nbsp;Корпоративную</h1><br>
-								<h1 class="section-header">Одежду&nbsp;&nbsp;<small>на заказ</small></h1>
+								<h1 class="section-header"><small>Изготавливаем</small> Корпоративную</h1><br>
+								<h1 class="section-header">Одежду<small> на&nbsp;заказ</small></h1>
 							</span>
-							<p class="hero-desc">Метод может быть любым, главное — как выглядит результат,<br>
-								к которому мы стремимся. Можете не сомневаться — наша команда<br>
+							<p class="hero-desc">Метод может быть любым, главное — как выглядит результат,<br> 
+								к которому мы стремимся. Можете не сомневаться — наша команда<br> 
 								найдёт способ осуществить любую идею.
 							</p>
+							<img class="mobile-banner" loading="lazy" src="images/mobile-banner-1.png" alt="">
 							<a class="order-btn btn-style-1" href="" type="button" data-modal-target="#callback-form">Заказать мерч!</a>
 						</div>
 					</div>
@@ -72,7 +107,6 @@
 
 				<section class="types">
 					<h1 class="section-header">Виды изделий</h1>
-
 					<div class="products-slider swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">							
@@ -180,20 +214,19 @@
 						</div>
 					</div>
 				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
 
 			<div class="desc-block">
-				<p class="description upper-text center" style="font-size: var(--fz-xxl);">
-						<b>Мы рады предложить вам широкий выбор параметров для разработки вашей лучшей<br>
-						корпоративной одежды!  Наша команда поможет подобрать нужное качество<br>
-						материала, крой, плотность и цветовую палитру.  Свяжитесь с нами, и мы оперативно<br>
-						разработаем предложение, соответствующее вашим желаниям и бюджету!</b>
+				<p class="description center">
+					Наша команда поможет подобрать нужное качество материала, крой, плотность<br> 
+					и цветовую палитру. Свяжитесь с нами, и мы оперативно разработаем предложение,<br> 
+					соответствующее вашим желаниям и бюджету!
 					</p>
 				<a class="order-btn" type="button" data-modal-target="#callback-form" href="">Заказать мерч!</a>
-			</div>
 
 		</section>
-
 				<section class="materials">
 					<h1 class="section-header">Материалы</h1>
 					<div class="materials-container">
@@ -204,45 +237,87 @@
 									<div class="text">Кулирная гладь</div>
 									<div class="desc">
 										Качество «пенье» и «пенье компакт» (высшие уровни хлопка) 
-										плотность от 150 до 300 гр/м2, вся цветовая гамма.
+										плотность от 150 до 300 гр/м2, вся цветовая гамма
 										</div>
 									<div class="desc">
-											В основном из него делают футболки.
+											В основном из него делают футболки
 									</div>
 								</div>
 								<img src="images/type_1.png" class="materials-image"></img>
 							</div>
 							<div class="materials-column">
 								<div class="materials-item b">
-									<div class="header-text">Футер двухнитка<br>петля/начес</div>
+									<div class="header-text">Футер двухнитка<br> петля/начес</div>
 									<div class="overlay">
-										<div class="text">Футер двухнитка<br>петля/начес</div>
-										<div class="desc">Плотность от 250 до 500 гр/м2.</div>
-										<div class="desc">В основном из него делают футболки, свитшоты, худи.</div>
+										<div class="text">Футер двухнитка<br> петля/начес</div>
+										<div class="desc">Плотность от 250 до 500 гр/м2</div>
+										<div class="desc">В основном из него делают футболки, свитшоты, худи</div>
 									</div>
-									<img src="images/type_2.png" class="materials-image"></img>
+									<img loading="lazy" src="images/type_2.png" class="materials-image"></img>
 								</div>							
 								<div class="materials-item b">
-									<div class="header-text">Футер трехнитка<br>петля/начес</div>
+									<div class="header-text">Футер трехнитка<br> петля/начес</div>
 									<div class="overlay">
-										<div class="text">Футер трехнитка<br>петля/начес</div>
-										<div class="desc">Плотность от 250 до 500 гр/м2.</div>
-										<div class="desc">В основном из него делают худи, зип-худи.</div>
+										<div class="text">Футер трехнитка<br> петля/начес</div>
+										<div class="desc">Плотность от 250 до 500 гр/м2</div>
+										<div class="desc">В основном из него делают худи, зип-худи</div>
 									</div>
-									<img src="images/type_3.png" class="materials-image"></img>
+									<img loading="lazy" src="images/type_3.png" class="materials-image"></img>
 								</div>
 							</div>
 							<div class="materials-item a">
 								<div class="header-text">Пике</div>
 								<div class="overlay">
 									<div class="text">Пике</div>
-									<div class="desc">Качество «пенье» и «пенье компакт» (высшие уровни хлопка) плотность от 150 до 200 гр/м2, вся цветовая гамма.</div>
-									<div class="desc">В основном из него делают футболки поло.</div>
+									<div class="desc">Качество «пенье» и «пенье компакт» (высшие уровни хлопка) плотность от 150 до 200 гр/м2, вся цветовая гамма</div>
+									<div class="desc">В основном из него делают футболки поло</div>
 								</div>
-								<img src="images/type_4.png" class="materials-image"></img>
+								<img loading="lazy" src="images/type_4.png" class="materials-image"></img>
 							</div>
 						</div>
 				</div>
+				<div class="materials-container mobile">
+					<div class="cards-container">
+						<div class="cards-row">
+							<div class="cards-item">
+								<img loading="lazy" src="images/type_1.png" class="cards-image"></img>
+								<div class="info">
+									<div class="cards-header">Кулирная гладь</div>
+									<p class="desc">
+										Качество «пенье» и «пенье компакт» (высшие уровни хлопка) 
+										плотность от 150 до 300 гр/м2, вся цветовая гамма
+									</p>
+									<p class="desc">
+											В основном из него делают футболки
+									</p>
+								</div>
+							</div>
+							<div class="cards-item">
+								<img loading="lazy" src="images/type_2.png" class="cards-image"></img>
+								<div class="info">
+									<div class="cards-header">Футер двухнитка<br> петля/начес</div>
+									<p class="desc">Плотность от 250 до 500 гр/м2</p>
+									<p class="desc">В основном из него делают футболки, свитшоты, худи</p>
+								</div>
+							</div>
+							<div class="cards-item">
+								<img src="images/type_3.png" class="cards-image"></img>
+								<div class="info">
+									<div class="cards-header">Футер трехнитка<br> петля/начес</div>
+									<p class="desc">Плотность от 250 до 500 гр/м2</p>
+									<p class="desc">В основном из него делают худи, зип-худи</p>
+								</div>
+							</div>
+							<div class="cards-item">
+								<img loading="lazy" src="images/type_4.png" class="cards-image"></img>
+								<div class="info">
+									<div class="cards-header">Пике</div>
+									<p class="desc">Качество «пенье» и «пенье компакт» (высшие уровни хлопка) плотность от 150 до 200 гр/м2, вся цветовая гамма</p>
+									<p class="desc">В основном из него делают футболки поло</p>
+								</div>
+							</div>
+						</div>
+					</div>
 			</section>
 
 			<section class="technologies">
@@ -250,24 +325,24 @@
 				<div class="cards-container">
 					<div class="cards-row">
 						<div class="cards-item">
-							<img src="images/tech_1.png" class="cards-image"></img>
+							<img loading="lazy" src="images/tech_1.png" class="cards-image"></img>
 							<div class="info">
 								<div class="cards-header">Шелкография</div>
-								<p class="desc">Шелкография — это способ печати, при котором краска продавливается специальным тупым ножом — ракелем — через печатающие элементы печатной формы</p>
+								<p class="desc">Шелкография — это способ печати, при&nbsp;котором краска продавливается специальным тупым ножом (ракелем) через печатающие элементы печатной формы</p>
 							</div>
 						</div>
 						<div class="cards-item">
-							<img src="images/tech_2.png" class="cards-image"></img>
+							<img loading="lazy" src="images/tech_2.png" class="cards-image"></img>
 							<div class="info">
 								<div class="cards-header">DTF</div>
-								<p class="desc">Direct To Film — «прямо на плёнку» — технология цифровой печати на текстиле и текстильных изделиях, с использованием в качестве промежуточного носителя изображения</p>
+								<p class="desc">Direct To Film — «прямо на плёнку» — технология цифровой печати на текстиле и текстильных изделиях, с&nbsp;использованием в качестве промежуточного носителя изображения</p>
 							</div>
 						</div>
 						<div class="cards-item">
-							<img src="images/tech_3.png" class="cards-image"></img>
+							<img loading="lazy" src="images/tech_3.png" class="cards-image"></img>
 							<div class="info">
 								<div class="cards-header">Вышивка</div>
-								<p class="desc">Машинная вышивка — это процесс создания вышитых изображений или узоров с помощью специализированных вышивальных машин.</p>
+								<p class="desc">Машинная вышивка — это процесс создания вышитых изображений или узоров с&nbsp;помощью специализированных вышивальных машин</p>
 							</div>
 						</div>
 					</div>
@@ -278,6 +353,8 @@
 				<h1 class="section-header">Этапы формирования заказа</h1>
 				<a class="order-btn" href="" type="button" data-modal-target="#callback-form">Сделать мерч</a>
 				<img class="steps-bg" src="images/order_steps.png" alt="">
+				<img class="steps-bg-mobile" src="images/order_steps-mobile.png" alt="">
+				<a class="order-btn mobile" href="" type="button" data-modal-target="#callback-form">Запустить свой мерч</a>
 			</section>
 
 			<section id="feedback">
@@ -292,13 +369,11 @@
 					</div>
 					<div class="feedback-data-input">
 						<p class="info">
-							Обсудим ваш проект.<br>
-							Подберем оптимальное решение.<br>
-							Предложим наиболее выгодные условия
-							сотрудничества у нас.
+							Обсудим ваш проект, подберем оптимальное решение, предложим наиболее выгодные условия
+							сотрудничества.
 						</p>
 						<input id="name" name="user_name2" type="text" placeholder="Имя">
-						<div style="display: flex; gap: 2rem; width: 100%; margin: 1rem 0 .5rem">
+						<div class="feedback-data-input-row">
 							<input id="phone" name="phone_number2" type="text" placeholder="Телефон">
 							<input id="comment" name="comment" type="text" placeholder="Комментарий">
 						</div>
@@ -311,28 +386,28 @@
 			<section id="clients">
 				<div class="cards-container">
 					<div class="cards-row">
-						<div class="cards-item"><img src="./images/icons/art_kvadrat.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/mechti.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/hud_federation.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/ufaoil.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/pan_asian_kitchen.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/mama_varit_kofe.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/art_kvadrat.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/mechti.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/hud_federation.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/ufaoil.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/pan_asian_kitchen.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/mama_varit_kofe.svg" class="cards-image"></img></div>
 					</div>
 					<div class="cards-row">
-						<div class="cards-item"><img src="./images/icons/shkola_economiki.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/alfalot.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/zorge_fitness.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/mendeleef_fitness.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/sber.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/lovkov.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/shkola_economiki.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/alfalot.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/zorge_fitness.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/mendeleef_fitness.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/sber.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/lovkov.svg" class="cards-image"></img></div>
 					</div>
 					<div class="cards-row">
-						<div class="cards-item"><img src="./images/icons/odjahuri.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/papa power.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/ldgr.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/eitek.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/fabrika.svg" class="cards-image"></img></div>
-						<div class="cards-item"><img src="./images/icons/a-market.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/odjahuri.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/papa power.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/ldgr.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/eitek.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/fabrika.svg" class="cards-image"></img></div>
+						<div class="cards-item"><img loading="lazy" src="./images/icons/a-market.svg" class="cards-image"></img></div>
 					</div>
 				</div>
 			</section>
@@ -342,18 +417,19 @@
 			<div class="footer-row">
 				<div class="footer-item">
 					<h1 class="a-group"><a href="/">A-GROUP</a></h1>
+					<p class="mobile">Создаем стиль, который объединяет.</p>
 				</div>
 				<div class="footer-item">
 					<ul class="a-group-info">
 						<li>ИП ФАТТАХОВ А.Р.</li>
 						<li>ИНН 027817725169</li>
 						<li>ОГРН 323028000075040</li>
-						<li><a href="policy.html">Политика конфиденциональности</a></li>
+						<li><a href="policy.html" target="_blank">Политика конфиденциальности</a></li>
 					</ul>
 				</div>
 			</div>
 
-			<div class="footer-row" style="align-items: flex-end">
+			<div class="footer-row last" style="align-items: flex-end">
 				<div class="footer-item">
 					<p class="f-paragraph">ОСТАЛИСЬ ВОПРОСЫ? СВЯЖИТЕСЬ С НАМИ</p>
 					<a class="f-phone" href="tel:+79876002813">+7 (987) 600-28-13</a>
@@ -376,7 +452,7 @@
 						</p>
 						<input class="name" name="user_name" type="text" placeholder="ИМЯ">
 						<input class="phone" name="phone_number" type="text" placeholder="ТЕЛЕФОН">
-						<input class="email" name="email_address" type="text" placeholder="ПОЧТА">
+						<input class="email" name="email_address" type="text" placeholder="ПОЧТА (необязательно)">
 						<input class="details" name="order_details" type="text" placeholder="ДЕТАЛИ ЗАКАЗА">
 						<input class="send-btn" type="submit" value="Отправить">
 						<p class="desc">
@@ -393,12 +469,11 @@
 		</div>
 
 	</div>
-			<script src="js/jquery/jquery-3.7.1.min.js"></script>
-			<script src="js/swiper/swiper-bundle.min.js"></script>
-			<script src="js/nice-select/jquery.nice-select.min.js"></script>
-			<script src="js/fancybox/jquery.fancybox.min.js"></script>
-			<script src="js/functions.js"></script>
-			<script src="js/forms.js"></script>
-			<script src="js/index.js"></script>
+		<script src="js/jquery/jquery-3.7.1.min.js"></script>
+		<script src="js/swiper/swiper-bundle.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/scroll_controller.js"></script>
+		<script src="js/forms.js" defer></script>
+		<script src="js/mobile.js" defer></script>
   </body>
 </html>

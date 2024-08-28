@@ -1,7 +1,6 @@
-// Общий для всего проекта JS-код
+let productsSlider;
 
 $(window).on('load', function () {
-	// Слайдер
 	const heroSlider = new Swiper('.hero-slider', {
     loop: true,
     autoplay: {
@@ -13,131 +12,87 @@ $(window).on('load', function () {
     },
 	});
 
-/* 	const redirect = document.querySelector(".swiper-wrapper");
-	redirect.addEventListener('click', function() {
-		openModal();
-}) */
-
-	// // Слайдер изделий
-	// const productsSlider = new Swiper('.products-slider', {
-	// 	freeMode: {
-	// 		enabled: true,
-	// 		sticky: true,
-	// 	},
-	// 	mousewheel: {
-	// 		invert: false,
-	// 	},
-	// 	spaceBetween: 80,
-	// 	slidesPerView: 2,
-	// 	slidesPerGroup: 1,
-
-	// 	breakpoints: {
-	// 		320: {
-	// 			slidesPerView: 2,
-	// 		},
-
-	// 		601: {
-	// 			slidesPerView: 3,
-	// 		},
-
-	// 		768: {
-	// 			slidesPerView: 4,
-	// 		},
-
-	// 		991: {
-	// 			slidesPerView: 5,
-	// 		},
-	// 	}
-	// });
-
-	const productsSlider = new Swiper('.products-slider', {
-    freeMode: {
-        enabled: true,
-    },
-    mousewheel: {
-        invert: false,
-    },
-    spaceBetween: 60,
-    slidesPerView: 3
-});
-
-let isEndReached = false;
-let lockScroll = false;
-
-// Функции для обработки достижения конца и начала
-productsSlider.on('reachEnd', function () {
-    isEndReached = true;
-});
-
-productsSlider.on('reachBeginning', function () {
-    isEndReached = true;
-});
-
-productsSlider.on('fromEdge', function () {
-    isEndReached = false;
-});
-
-// Функция для проверки, находится ли центр блока в центре viewport
-function checkSliderPosition() {
-    const rect = document.querySelector('.products-slider').getBoundingClientRect();
-    const viewportHeight = window.innerHeight;
-
-    // Вычисляем центр блока и центр viewport
-    const sliderCenter = rect.top + rect.height / 2;
-    const viewportCenter = viewportHeight / 2;
-
-    // Блокируем скролл, если центр блока находится близко к центру viewport
-    if (Math.abs(sliderCenter - viewportCenter) < 0) { // Точность можно регулировать
-        lockScroll = true;
-				console.log("center");
-    } else {
-        lockScroll = false;
-    }
-}
-
-// Обновляем состояние при скролле и изменении размера окна
-// window.addEventListener('scroll', checkSliderPosition);
-
-// Обработка скролла колесиком мыши
-// window.addEventListener('wheel', function (e) {
-
-// 	checkSliderPosition()
-
-//     if (lockScroll && !isEndReached) {
-//         // Определяем направление скролла
-//         let delta = e.deltaY;
-
-//         // Получаем текущее смещение
-//         let currentTranslate = productsSlider.translate;
-
-//         // Вычисляем новое значение смещения
-//         let newTranslate = delta > 0
-//             ? currentTranslate - 100
-//             : currentTranslate + 100;
-
-//         // Перемещаем слайдер к новому положению, используя swiper.translateTo
-//         productsSlider.translateTo(newTranslate, 10);
-
-//         // Предотвращаем вертикальный скролл
-//         e.preventDefault();
-//     }
-// }, { passive: false });
-
-
-const scrollThreshold = 1000; // Пороговая координата скролла
-
-window.addEventListener('scroll', function () {
-
-	if (isEndReached) {
-		isEndReached = true;
-		return;
-	}
-
-	// if (!isEndReached && window.scrollY >= 1100+window.pageXOffset) {
-	// 	window.scrollTo({
-	// 		top: 1100+window.pageXOffset,
-	// 		behavior: "instant",
-	// 	});
-  //   }
+	productsSlider = new Swiper('.products-slider', {
+		mousewheel: {
+			invert: false,
+		},
+		spaceBetween: 60, 
+		slidesPerView: 3, 
+		slidesPerGroup: 1, 
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		breakpoints: {
+			// Настройки будут применяться только при достижении указанных разрешений
+			320: {
+				slidesPerView: 1.5,
+				spaceBetween: 50,
+				slidesOffsetAfter: 75, 
+				slidesOffsetBefore: 45,
+				centeredSlidesBounds: true
+			},
+			360: {
+				slidesPerView: 1.5,
+				spaceBetween: 140,
+				slidesOffsetAfter: 145,
+				slidesOffsetBefore: 15,
+				centeredSlidesBounds: true
+			},
+			375: {
+				slidesPerView: 1.5,
+				spaceBetween: 140,
+				slidesOffsetAfter: 145, 
+				slidesOffsetBefore: 20,
+				centeredSlidesBounds: true
+			},
+			390: {
+				slidesPerView: 1.5,
+				spaceBetween: 120,
+				slidesOffsetAfter: 135, 
+				slidesOffsetBefore: 28,
+				centeredSlidesBounds: true
+			},
+			412: {
+				slidesPerView: 1.5,
+				spaceBetween: 100,
+				slidesOffsetAfter: 123, 
+				slidesOffsetBefore: 39,
+				centeredSlidesBounds: true
+			},
+			414: {
+				slidesPerView: 1.5,
+				spaceBetween: 105,
+				slidesOffsetAfter: 124, 
+				slidesOffsetBefore: 45,
+				centeredSlidesBounds: true
+			},
+			430: {
+				slidesPerView: 1.5,
+				spaceBetween: 80,
+				slidesOffsetAfter: 115,
+				slidesOffsetBefore: 48,
+				centeredSlidesBounds: true
+			},
+			480: {
+				slidesPerView: 1.5,
+				spaceBetween: 60,
+				slidesOffsetAfter: 100,
+				slidesOffsetBefore: 70,
+				centeredSlidesBounds: true
+			},
+			576: {
+				slidesPerView: 1.5,
+				spaceBetween: 10,
+				slidesOffsetAfter: 70, 
+				slidesOffsetBefore: 120,
+				centeredSlidesBounds: true
+			},
+			640: {
+				slidesPerView: 3,
+				spaceBetween: 60,
+				slidesOffsetAfter: 60, 
+			}
+		}
 	});
 });
